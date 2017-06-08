@@ -1,4 +1,4 @@
-//Crea un árbol compuesto por 'H' recursivamente
+//Crea un árbol compuesto por 'H' recursivamente. Se necesita la clase StdDraw
 //Autora: Denisse Alfaro
 //2016
 public class Htree{

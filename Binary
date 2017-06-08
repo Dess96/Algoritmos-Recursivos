@@ -1,0 +1,23 @@
+// Este algoritmo convierte un número de base decimal a binario
+//Autora: Denisse Alfaro
+//2016
+public class Binary2{
+
+public static String convertNR(int x){
+  String s = " ";
+  while(x > 1){
+    s = (x%2) + s;
+    x = x/2;
+  }
+  s = "1" + s;
+  return s;
+}
+
+public static void main(String[] args) {
+    int x = Integer.parseInt("4");
+    
+    //convert(6);
+    System.out.println(convertNR(x));
+
+  }
+}

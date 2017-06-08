@@ -1,0 +1,23 @@
+/*Se hace "La Conjetura de Collatz" recursivamente. Se toma un número y si es par, se divide entre dos. Si es impar se multiplica por tres y se le suma uno
+y así sucesivamente. La conjetura es que no importa en qué número se empiece, siempre se termina en 1.*/
+//Autora: Denisse Alfaro
+//Año: 2016
+import java.util.Arrays;
+
+public class SCollatz{
+  
+  public static void collatz(int N){
+    System.out.println(N + " ");
+    if(N == 1){
+      return;
+    }else if(N % 2 == 0){
+      collatz(N/2);
+    }else{
+      collatz(3 * N + 1);
+    }
+  }
+  
+  public static void main(String[] args) {
+    collatz(35);
+  }
+}

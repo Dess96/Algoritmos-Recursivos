@@ -1,0 +1,23 @@
+//Se resuelven las torres de Hanoi de forma recursiva. 
+//Autora: Denisse Alfaro
+//Año: 2016
+public class TowersOfHanoi{
+  
+  public static void moves(int n, boolean left){
+    if(n == 0){
+      return;
+    }
+    moves(n-1, left = false);
+    if(left){
+      System.out.println(n + " left");
+    }else{
+      System.out.println(n + " right");
+    }
+    moves(n-1, left = false);
+  }
+  
+  public static void main(String[] args) {
+    int N = Integer.parseInt("3");
+    moves(N, true);
+  }
+}
